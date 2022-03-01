@@ -3,7 +3,7 @@
 Design a tool to increase productivity in users by helping them plan for their day.
 
 ## 🌐 Application
-<a href="https://pr1me-e1gh7.github.io/weather-dashboard/">Link to the App</a>
+<a href="https://pr1me-e1gh7.github.io/day-planner/">Link to the App</a>
 
 ## 💭 Description
 ```md
