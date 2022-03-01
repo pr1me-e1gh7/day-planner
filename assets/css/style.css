@@ -1,0 +1,105 @@
+/* Page Elements */
+:root {
+    --bannerBkgd: #fb5607;
+    --bannerText: #FFFFFF;
+    --boxAfter: #3a86ff;
+    --boxNow: #8338ec;
+    --boxBefore: #ff006e;
+    --boxSave: #ffbe0b;
+    --boxSaveHover: #ffd257;
+    --pageText: #000000;
+}
+body {
+    color: var(--pageText);
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+/* Background Image */
+    background-image: url(https://rockcontent.com/wp-content/uploads/2021/02/productivity.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Banner */
+#clock {
+    margin-bottom: -20px;
+    margin-top: -40px;
+}
+.custom-jumbotron {
+    background-color: var(--bannerBkgd);
+    border-radius: 0;
+    color: var(--bannerText);
+    text-align: center;
+}
+.quoteSection h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-style: italic;
+    font-size: 400%;
+    margin-bottom: -10px;
+}
+.quoteSection h3 {
+    font-size: 200%;
+}
+.quoteSection h4 {
+    font-size: 150%;
+}
+
+/* Time Entries */
+.hourBox {
+    background-color: white;
+    border-top: 1px dashed black;
+}
+.hourText {
+    font-size: 150%;
+}
+.custom-row {
+    border-top: 1px solid white;
+    height: 80px;
+    white-space: pre-wrap;
+} 
+textarea {
+    color: black;
+    background: transparent;
+    border-left: 1px solid black;
+    font-size: 150%;
+    font-weight: bold;
+    padding: 10px;
+    resize: none;
+}
+.time-block {
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Time-Reflective Colors */
+.timeBefore {
+    background-color: var(--boxBefore);
+}
+.timeNow {
+    background-color: var(--boxNow);
+} 
+.timeAfter {
+    background-color: var(--boxAfter);
+}
+
+/* Save Button */
+.btnSave {
+    background-color: var(--boxSave);
+    border: none;
+    border-bottom-right-radius: 20px;
+    border-left: 1px solid black;
+    border-top-right-radius: 20px;
+    color: white;
+}
+.btnSave:hover {
+    background-color: var(--boxSaveHover);
+    font-size: 40px;
+    transition: all 0.1s;
+}
+
+/* Clear Button */
+.btnClear:hover {
+    font-weight: bolder;
+}
