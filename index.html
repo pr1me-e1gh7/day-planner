@@ -10,11 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=BhuTuka+Expanded+One&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Jquery -->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS link -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Favicon -->
@@ -26,133 +23,132 @@
   <body>
     <header class="jumbotron custom-jumbotron">
       <h1>Welcome to your Day Planner</h1>
+      <h1 id="clock"></h1>
       <div class="quoteSection">
         <h2>“““You miss 100% of the shots you don’t take.”<h2>
         <h3>- Wayne Gretzky, Canadian former professional ice hockey player,”</h3>
         <h4>- Michael Scott, Dunder Mifflin Regional Branch Manager,”</h4>
         <h5>- David Caro, your friendly-neighborhood Web Developer <i class="fas fa-spider"></i></h5>
       </div>
-      <br><br><br>
-      <h1 id="clock"></h1>
     </header>
     
     <!-- Planner Section -->
     <div class="container">
       <!-- 0800 -->
-      <div class="row custom-row time-block mb-3" data-index="0" data-time="8">
+      <div class="row custom-row timeBlock mb-3" data-index="0" data-time="8">
         <div class="col-2 hourBox">
           <p class="hourText">08:00</p>
         </div>
         <textarea class="col-8 text-area"></textarea>
         <button class="col-2 btnSave"><i class="fa-solid fa-floppy-disk"></i></button>
-      </div>
+      </div><br>
       <!-- 0900 -->
-      <div class="row custom-row time-block mb-3" data-index="0" data-time="9">
+      <div class="row custom-row timeBlock mb-3" data-index="0" data-time="9">
         <div class="col-2 hourBox">
           <p class="hourText">09:00</p>
         </div>
         <textarea class="col-8 text-area"></textarea>
         <button class="col-2 btnSave"><i class="fa-solid fa-floppy-disk"></i></button>
-      </div>
+      </div><br>
       <!-- 1000 -->
-      <div class="row custom-row time-block mb-3" data-index="1" data-time="10">
+      <div class="row custom-row timeBlock mb-3" data-index="1" data-time="10">
         <div class="col-2 hourBox">
           <p class="hourText">10:00</p>
         </div>
         <textarea class="col-8 text-area"></textarea>
         <button class="col-2 btnSave"><i class="fa-solid fa-floppy-disk"></i></button>
-      </div>
+      </div><br>
       <!-- 1100 -->
-      <div class="row custom-row time-block mb-3" data-index="2" data-time="11">
+      <div class="row custom-row timeBlock mb-3" data-index="2" data-time="11">
         <div class="col-2 hourBox">
           <p class="hourText">11:00</p>
         </div>
         <textarea class="col-8 text-area"></textarea>
         <button class="col-2 btnSave"><i class="fa-solid fa-floppy-disk"></i></button>
-      </div>
+      </div><br>
       <!-- 1200 -->
-      <div class="row custom-row time-block mb-3" data-index="3" data-time="12">
+      <div class="row custom-row timeBlock mb-3" data-index="3" data-time="12">
         <div class="col-2 hourBox">
           <p class="hourText">12:00</p>
         </div>
         <textarea class="col-8 text-area"></textarea>
         <button class="col-2 btnSave"><i class="fa-solid fa-floppy-disk"></i></button>
-      </div>
+      </div><br>
       <!-- 1300 -->
-      <div class="row custom-row time-block mb-3" data-index="4" data-time="13">
+      <div class="row custom-row timeBlock mb-3" data-index="4" data-time="13">
         <div class="col-2 hourBox">
           <p class="hourText">13:00</p>
         </div>
         <textarea class="col-8 text-area"></textarea>
         <button class="col-2 btnSave"><i class="fa-solid fa-floppy-disk"></i></button>
-      </div>
+      </div><br>
       <!-- 1400 -->
-      <div class="row custom-row time-block mb-3" data-index="5" data-time="14">
+      <div class="row custom-row timeBlock mb-3" data-index="5" data-time="14">
         <div class="col-2 hourBox">
           <p class="hourText">14:00</p>
         </div>
         <textarea class="col-8 text-area"></textarea>
         <button class="col-2 btnSave"><i class="fa-solid fa-floppy-disk"></i></button>
-      </div>
+      </div><br>
       <!-- 1500 -->
-      <div class="row custom-row time-block mb-3" data-index="6" data-time="15">
+      <div class="row custom-row timeBlock mb-3" data-index="6" data-time="15">
         <div class="col-2 hourBox">
           <p class="hourText">15:00</p>
         </div>
         <textarea class="col-8 text-area"></textarea>
         <button class="col-2 btnSave"><i class="fa-solid fa-floppy-disk"></i></button>
-      </div>
+      </div><br>
       <!-- 1600 -->
-      <div class="row custom-row time-block mb-3" data-index="7" data-time="16">
+      <div class="row custom-row timeBlock mb-3" data-index="7" data-time="16">
         <div class="col-2 hourBox">
           <p class="hourText">16:00</p>
         </div>
         <textarea class="col-8 text-area"></textarea>
         <button class="col-2 btnSave"><i class="fa-solid fa-floppy-disk"></i></button>
-      </div>
+      </div><br>
       <!-- 1700 -->
-      <div class="row custom-row time-block mb-3" data-index="8" data-time="17">
+      <div class="row custom-row timeBlock mb-3" data-index="8" data-time="17">
         <div class="col-2 hourBox">
           <p class="hourText">17:00</p>
         </div>
         <textarea class="col-8 text-area"></textarea>
         <button class="col-2 btnSave"><i class="fa-solid fa-floppy-disk"></i></button>
-      </div>
+      </div><br>
       <!-- 1800 -->
-      <div class="row custom-row time-block mb-3" data-index="8" data-time="18">
+      <div class="row custom-row timeBlock mb-3" data-index="8" data-time="18">
         <div class="col-2 hourBox">
           <p class="hourText">18:00</p>
         </div>
         <textarea class="col-8 text-area"></textarea>
         <button class="col-2 btnSave"><i class="fa-solid fa-floppy-disk"></i></button>
-      </div>
+      </div><br>
       <!-- 1900 -->
-      <div class="row custom-row time-block mb-3" data-index="8" data-time="19">
+      <div class="row custom-row timeBlock mb-3" data-index="8" data-time="19">
         <div class="col-2 hourBox">
           <p class="hourText">19:00</p>
         </div>
         <textarea class="col-8 text-area"></textarea>
         <button class="col-2 btnSave"><i class="fa-solid fa-floppy-disk"></i></button>
-      </div>
+      </div><br>
       <!-- 2000 -->
-      <div class="row custom-row time-block mb-3" data-index="8" data-time="20">
+      <div class="row custom-row timeBlock mb-3" data-index="8" data-time="20">
         <div class="col-2 hourBox">
           <p class="hourText">20:00</p>
         </div>
         <textarea class="col-8 text-area"></textarea>
         <button class="col-2 btnSave"><i class="fa-solid fa-floppy-disk"></i></button>
-      </div>
+      </div><br>
       <!-- Clear Button -->
-      <div class="row custom-row py-3 justify-content-end">
+      <div class="row py-3 justify-content-center">
         <button type="button" class="btn btn-danger btn-lg custom-btn btnClear">Delete Your Tasks</button>
       </div>
     </div>
 
     <!-- Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
     <!-- Moment JS for the live clock -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
     <!-- Custom JS link -->
     <script src="./assets/js/script.js"></script>
   </body>

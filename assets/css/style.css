@@ -1,35 +1,29 @@
 /* Page Elements */
 :root {
-    --bannerBkgd: #fb5607;
     --bannerText: #FFFFFF;
     --boxAfter: #3a86ff;
-    --boxNow: #8338ec;
     --boxBefore: #ff006e;
-    --boxSave: #ffbe0b;
-    --boxSaveHover: #ffd257;
+    --boxNow: #8338ec;
+    --boxText: #FFFFFF;
+    --pageBkgd: #ffbe0b;
     --pageText: #000000;
 }
 body {
+    background-color: var(--pageBkgd);
     color: var(--pageText);
     font-family: 'BhuTuka Expanded One', cursive;
     font-size: 16px;
     font-weight: bold;
     line-height: 1;
-/* Background Image */
-    background-image: url(https://rockcontent.com/wp-content/uploads/2021/02/productivity.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
 /* Banner */
-#clock {
-    margin-bottom: -20px;
-    margin-top: -40px;
-}
 .custom-jumbotron {
-    background-color: var(--bannerBkgd);
-    border-radius: 0;
+    background-image: url(https://rockcontent.com/wp-content/uploads/2021/02/productivity.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px;
     color: var(--bannerText);
     text-align: center;
 }
@@ -46,60 +40,63 @@ body {
     font-size: 150%;
 }
 
-/* Time Entries */
+/* Planner */
+.custom-row {
+    height: 80px;
+    white-space: pre-wrap;
+}
 .hourBox {
     background-color: white;
-    border-top: 1px dashed black;
+    border-bottom-left-radius: 20px;
+    border-right: transparent;
+    border-top-left-radius: 20px;
 }
 .hourText {
     font-size: 150%;
 }
-.custom-row {
-    border-top: 1px solid white;
-    height: 80px;
-    white-space: pre-wrap;
-} 
-textarea {
-    color: black;
+.text-area {
+    color: var(--boxText);
     background: transparent;
-    border-left: 1px solid black;
+    border: transparent;
     font-size: 150%;
     font-weight: bold;
     padding: 10px;
     resize: none;
 }
-.time-block {
-    border-radius: 15px;
+.timeBlock {
+    border-radius: 20px;
     text-align: center;
 }
 
 /* Time-Reflective Colors */
+.timeAfter {
+    background-color: var(--boxAfter);
+}
 .timeBefore {
     background-color: var(--boxBefore);
 }
 .timeNow {
     background-color: var(--boxNow);
 } 
-.timeAfter {
-    background-color: var(--boxAfter);
-}
 
-/* Save Button */
+/* Buttons */
+.btnClear {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.btnClear:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
 .btnSave {
-    background-color: var(--boxSave);
-    border: none;
+    background-color: #FFFFFF;
+    border: transparent;
     border-bottom-right-radius: 20px;
-    border-left: 1px solid black;
     border-top-right-radius: 20px;
-    color: white;
+    color: #000000;
 }
 .btnSave:hover {
-    background-color: var(--boxSaveHover);
     font-size: 40px;
     transition: all 0.1s;
-}
-
-/* Clear Button */
-.btnClear:hover {
-    font-weight: bolder;
 }

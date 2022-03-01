@@ -1,6 +1,6 @@
 // Live clock
 window.setInterval(function () {
-    $('#clock').html(moment().format('[Today\'s Date: ]YYYY-MM-DD HH:mm:ss'))
+    $('#clock').html(moment().format('[Current Time: ]YYYY-MM-DD HH:mm:ss'))
 }, 1000);
 
 // BUTTONS
