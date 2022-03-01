@@ -44,9 +44,9 @@ $(function txtArea() {
 
     // Red if before 8 AM
     if (timeNow < 8) {
-        $('.container').find('textarea').addClass('timeAfter');
+        $('.custom-container').find('textarea').addClass('timeAfter');
     // Blue if after 8 PM
     } else if (timeNow > 20) {
-        $('.container').find('textarea').addClass('timeBefore');
+        $('.custom-container').find('textarea').addClass('timeBefore');
     }
 });
